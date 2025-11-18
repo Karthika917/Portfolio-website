@@ -1,0 +1,236 @@
+body{
+  padding-top: 10px;
+  font-family: 'Inter', sans-serif;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+.main-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+.main-nav .nav-link.active,
+.main-nav .nav-link:hover {
+   color:  #ff6a00;
+  transform: translateY(-2px);
+}
+.right-side {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.right-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.right-side li {
+  padding:20px 0px;
+}
+.right-side a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  color:black;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.right-side a:hover {
+  transform: scale(1.1);
+  background: #ff6a00;
+  color: white;
+}
+@media(max-width: 768px){
+  .right-side{
+    right: 10px;
+  }
+  .right-side li{
+    padding: 10px 0;
+  }
+}
+.home{
+  margin-top: 150px;
+}
+.home h2{
+  font-weight: 500;
+  font-size: 45px;
+}
+.home p{
+  font-size: 25px;
+  color:rgba(255, 255, 255, 0.7);
+}
+section {
+  min-height: 100vh;
+  padding: 50px 20px;
+  scroll-margin-top: 30px; 
+}
+#about, #skills, #education, #projects{
+  max-width: 1020px;
+  margin-inline: auto;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+.about-me h1, .skill-intro h1,#education h1, #projects h1, #contact h2{
+  font-size: 45px;
+  padding-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.about-me p, .skill-intro p{
+  font-size: 20px;
+  line-height: 2rem;
+  text-align: justify;
+}
+.talk-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background: #1db954;  
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.talk-btn:hover {
+    background: #17a648;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.mypic{
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.rows{
+  margin-left: 100px;
+}
+ .mycard-active {
+   border: 2px solid #046e1d; 
+   box-shadow: 0 8px 10px -5px rgba(21, 179, 58, 0.9); 
+}
+.mycard-active:hover{
+  transform:scale(1.2) ;
+}
+ 
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 8px 0;
+  max-width: 1000px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #28a745;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 15px;
+  height: 15px;
+  background: #28a745;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -7px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -7px;
+}
+
+.timeline-item p{
+    font-size: 20px;
+}
+.timeline-item h3{
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0;
+    text-align: left !important;
+    left: 0 !important;
+  }
+
+  .timeline-item::before {
+    left: 0;
+  }
+}
+.websites{
+  margin-top: 60px;
+}
+.websites h3{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7); 
+}
+.websites p{
+  color:rgba(255, 255, 255, 0.7); 
+}
+.websites img:hover {
+  transform: scale(1.23);
+  transition: 0.3s ease;
+}
+.mybtn{
+  width: 50%;
+}
+.contact-box {
+  max-width: 450px;  
+  width: 100%;        
+  margin: 0 auto;     
+  border: 1px solid #2ecc71;
+  border-radius: 10px;
+  padding: 25px;
+  background: #111;
+}
+footer {
+  background: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-text {
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+}
